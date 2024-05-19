@@ -2,8 +2,10 @@
 
 namespace Imperialism;
 
+using System.Reflection;
+
 class Program {
     public static void Main() {
-        CameraController cameraController = new();
+        Game game = new();
     }
 }

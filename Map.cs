@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace Imperialism;
 
 using Raylib_cs;
@@ -34,6 +36,11 @@ public class Map {
                     };
 
                     Raylib.DrawRectangle(x*TileSize, y*TileSize, TileSize, TileSize, color);
+
+                    if (_tiles[x, y].Kind == TileKind.Grass) {
+                        Raylib.DrawTexture(Textures.Instance.Grass, x*TileSize, y*TileSize, Color.White);
+                        // Raylib.DrawTextureEx(Textures.Instance.Grass, new Vector2(x*TileSize, y*TileSize), (float)Random.Shared.NextDouble()*360%90, 1f, Color.White);
+                    }
                 }
             }
         
