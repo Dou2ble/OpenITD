@@ -3,13 +3,13 @@ using Raylib_cs;
 
 namespace Imperialism;
 
-class Game
+class CameraController
 {
     private Map _map;
     private Player _player;
     private Camera2D _camera;
     
-    public Game() {
+    public CameraController() {
         Raylib.InitWindow(1280, 720, "Imperialism");
         _map = new();
         _player = new();

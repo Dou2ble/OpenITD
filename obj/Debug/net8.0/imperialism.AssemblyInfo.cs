@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("imperialism")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+145eba2cb7d251cb58aa63fd23c33bcf354ca146")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+381f09e07876947e0949fc22e4a4a96f1256c597")]
 [assembly: System.Reflection.AssemblyProductAttribute("imperialism")]
 [assembly: System.Reflection.AssemblyTitleAttribute("imperialism")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
