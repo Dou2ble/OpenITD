@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cDg7eIo9TcGb15mDtQ5vEvyA0WRDGheJytI6y35Ztkr+tO+MYK83kv2sbhLnK4Q6L9MIR5i0bKKbnohw+4XITg==",
+  "success": true,
+  "projectFilePath": "/home/otto/Projects2/c#/imperialism/imperialism.csproj",
+  "expectedPackageFiles": [
+    "/home/otto/.nuget/packages/raylib-cs/6.0.0/raylib-cs.6.0.0.nupkg.sha512",
+    "/home/otto/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/home/otto/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
