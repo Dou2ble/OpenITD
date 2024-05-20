@@ -7,11 +7,11 @@ using System.Reflection;
 public class Textures {
     private static Textures instance;
     private static readonly object lockObject = new object();
-    
+
     private static string TexturePath(string name) {
         return $"resources/textures/{name}.png";
     }
-    
+
     public Texture2D Grass = Raylib.LoadTexture(TexturePath("grass"));
 
     public static Textures Instance {

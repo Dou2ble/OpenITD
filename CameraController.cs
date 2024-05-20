@@ -31,7 +31,7 @@ public class CameraController {
             Position.X += _movementSpeed * dt;
         }
 
-        Zoom += Raylib.GetMouseWheelMoveV().Y*ZoomStep;
+        Zoom += Raylib.GetMouseWheelMoveV().Y * ZoomStep;
         if (Zoom < ZoomStep) {
             Zoom = ZoomStep;
         }
