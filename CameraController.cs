@@ -7,7 +7,7 @@ public class CameraController {
     public Vector2 Position;
     public float Zoom = 1;
     private float _movementSpeed = 500;
-    private const float ZoomStep = 0.125f;
+    private const float ZoomStep = 1/64f;
     private const int RegularMovementSpeed = 500;
 
     public void Update(float dt) {

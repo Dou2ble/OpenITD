@@ -9,7 +9,6 @@ public class Map {
     private const int TotalHeight = 128;
     private const float heightIntensity = 0.25f;
     private const int waterLevel = 20;
-    private const int TileSize = 32;
     private RenderTexture2D _texture;
 
     private Tile[,] _tiles;
@@ -37,23 +36,23 @@ public class Map {
                     _ => Color.Pink
                 };
 
-                Raylib.DrawRectangle(x * TileSize, y * TileSize, TileSize, TileSize, color);
+                Raylib.DrawRectangle(x * Constants.TileSize, y * Constants.TileSize, Constants.TileSize, Constants.TileSize, color);
 
                 // if (_tiles[x, y].Kind == TileKind.Grass) {
-                // Raylib.DrawTexture(Textures.Instance.Grass, x * TileSize, y * TileSize, Raylib.ColorFromHSV(0, 0, _tiles[x, y].Heightk));
+                // Raylib.DrawTexture(Textures.Instance.Grass, x * Constants.TileSize, y * Constants.TileSize, Raylib.ColorFromHSV(0, 0, _tiles[x, y].Heightk));
                 //     float rotation = (float)Random.Shared.Next(0, 3)*90;
                 //     
-                //     Vector2 position = new Vector2(x * TileSize, y * TileSize);
+                //     Vector2 position = new Vector2(x * Constants.TileSize, y * Constants.TileSize);
                 //     switch (rotation) {
                 //         case 90f:
-                //             position.X += TileSize;
+                //             position.X += Constants.TileSize;
                 //             break;
                 //         case 180f:
-                //             position.X += TileSize;
-                //             position.Y += TileSize;
+                //             position.X += Constants.TileSize;
+                //             position.Y += Constants.TileSize;
                 //             break;
                 //         case 270f:
-                //             position.Y += TileSize;
+                //             position.Y += Constants.TileSize;
                 //             break;
                 //     }
                 //     
@@ -67,7 +66,7 @@ public class Map {
 
     public Map() {
         _tiles = new Tile[TotalWidth, TotalHeight];
-        _texture = Raylib.LoadRenderTexture(TotalWidth * TileSize, TotalHeight * TileSize);
+        _texture = Raylib.LoadRenderTexture(TotalWidth * Constants.TileSize, TotalHeight * Constants.TileSize);
 
         int offsetX = Random.Shared.Next(int.MinValue / 512, int.MaxValue / 512);
         int offsetY = Random.Shared.Next(int.MinValue / 512, int.MaxValue / 512);

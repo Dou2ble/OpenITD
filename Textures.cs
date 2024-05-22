@@ -13,6 +13,7 @@ public class Textures {
     }
 
     public Texture2D Grass = Raylib.LoadTexture(TexturePath("grass"));
+    public Texture2D Car = Raylib.LoadTexture(TexturePath("car1"));
 
     public static Textures Instance {
         get {
