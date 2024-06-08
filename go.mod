@@ -7,7 +7,6 @@ require (
 	github.com/gen2brain/raylib-go/raygui v0.0.0-20240524074310-a997a44fb95b
 	github.com/gen2brain/raylib-go/raylib v0.0.0-20240524074310-a997a44fb95b
 	github.com/go-cmd/cmd v1.4.2
-	github.com/Dou2ble/OpenITD/pkg/menu v1.0.0
 )
 
 require (

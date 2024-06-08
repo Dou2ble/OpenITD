@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/Dou2ble/OpenITD/pkg/utils"
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
 
@@ -37,7 +38,7 @@ func (atlas *Atlas) Update() {
 	// Handle using the various tools for building
 	if atlasMousePosX >= 0 && atlasMousePosX < atlasSize &&
 		atlasMousePosY >= 0 && atlasMousePosY < atlasSize &&
-		!Vector2InRec(mousePos, barRec) &&
+		!utils.Vector2InRec(mousePos, barRec) &&
 		rl.IsMouseButtonDown(rl.MouseButtonLeft) {
 		switch activeTool {
 		case ToolBulldozer:

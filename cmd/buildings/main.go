@@ -4,7 +4,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/Dou2ble/OpenITD/pkg/menu"
+	"github.com/Dou2ble/OpenITD/pkg/gui"
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
 
@@ -24,7 +24,7 @@ func main() {
 
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
-		menu.Button(rl.NewRectangle(10, 10, 100, 100), "wuu")
+		gui.Button(rl.NewRectangle(10, 10, 100, 100), "wuu", false)
 
 		rl.ClearBackground(rl.DarkGray)
 

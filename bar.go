@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/Dou2ble/OpenITD/pkg/menu"
 	rg "github.com/gen2brain/raylib-go/raygui"
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
@@ -24,7 +23,6 @@ const (
 
 func bar() Tool {
 	result := activeTool
-	menu.Button()
 
 	barRec.Width = barRec.Height * barButtonCount
 	barRec.X = float32(width)/2 - barRec.Width/2
